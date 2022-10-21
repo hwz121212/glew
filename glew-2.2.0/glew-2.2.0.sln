@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{A4439CFC-DAC2-4C88-BDBF-868F322E13DC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glew", "thirdparty\glew-2.2.0\glew.vcxproj", "{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libglew", "thirdparty\glew-2.2.0\libglew.vcxproj", "{664E6F0D-6784-4760-9565-D54F8EB1EDF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_demo", "1_demo", "{88BD8679-8603-4599-A494-D7B2524300E0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glewinfo", "demo\glewinfo\glewinfo.vcxproj", "{8EFB5DCB-C0C4-1670-5938-A0E0F1A1C5EA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{664E6F0D-6784-4760-9565-D54F8EB1EDF4} = {664E6F0D-6784-4760-9565-D54F8EB1EDF4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "visualinfo", "demo\visualinfo\visualinfo.vcxproj", "{79AA8443-86F4-649A-0BEB-0CB5E51B7D7E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{664E6F0D-6784-4760-9565-D54F8EB1EDF4} = {664E6F0D-6784-4760-9565-D54F8EB1EDF4}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Debug|x64.ActiveCfg = Debug|x64
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Debug|x64.Build.0 = Debug|x64
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Release|x64.ActiveCfg = Release|x64
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Release|x64.Build.0 = Release|x64
+		{664E6F0D-6784-4760-9565-D54F8EB1EDF4}.Debug|x64.ActiveCfg = Debug|x64
+		{664E6F0D-6784-4760-9565-D54F8EB1EDF4}.Debug|x64.Build.0 = Debug|x64
+		{664E6F0D-6784-4760-9565-D54F8EB1EDF4}.Release|x64.ActiveCfg = Release|x64
+		{664E6F0D-6784-4760-9565-D54F8EB1EDF4}.Release|x64.Build.0 = Release|x64
+		{8EFB5DCB-C0C4-1670-5938-A0E0F1A1C5EA}.Debug|x64.ActiveCfg = Debug|x64
+		{8EFB5DCB-C0C4-1670-5938-A0E0F1A1C5EA}.Debug|x64.Build.0 = Debug|x64
+		{8EFB5DCB-C0C4-1670-5938-A0E0F1A1C5EA}.Release|x64.ActiveCfg = Release|x64
+		{8EFB5DCB-C0C4-1670-5938-A0E0F1A1C5EA}.Release|x64.Build.0 = Release|x64
+		{79AA8443-86F4-649A-0BEB-0CB5E51B7D7E}.Debug|x64.ActiveCfg = Debug|x64
+		{79AA8443-86F4-649A-0BEB-0CB5E51B7D7E}.Debug|x64.Build.0 = Debug|x64
+		{79AA8443-86F4-649A-0BEB-0CB5E51B7D7E}.Release|x64.ActiveCfg = Release|x64
+		{79AA8443-86F4-649A-0BEB-0CB5E51B7D7E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D} = {A4439CFC-DAC2-4C88-BDBF-868F322E13DC}
+		{664E6F0D-6784-4760-9565-D54F8EB1EDF4} = {A4439CFC-DAC2-4C88-BDBF-868F322E13DC}
+		{8EFB5DCB-C0C4-1670-5938-A0E0F1A1C5EA} = {88BD8679-8603-4599-A494-D7B2524300E0}
+		{79AA8443-86F4-649A-0BEB-0CB5E51B7D7E} = {88BD8679-8603-4599-A494-D7B2524300E0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
+	EndGlobalSection
+EndGlobal
